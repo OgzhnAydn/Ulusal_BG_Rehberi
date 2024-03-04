@@ -1,9 +1,10 @@
 
 ## İÇİNDEKİLER
  
+#KISALTMALAR 
+#TANIMLAR 
 
-
-* [KISALTMALAR 5](#KISALTMALAR 5)
+* [1KISALTMALAR 5](#1 KISALTMALAR 5)
 * [TANIMLAR 7](#TANIMLAR 7)
   * [1.1 Format of the Audit Log Event](#11-format-of-the-audit-log-event)
     * [1.1.1 Extended Audit Log Format](#111-extended-audit-log-format)

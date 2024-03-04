@@ -1,181 +1,193 @@
-
-## İÇİNDEKİLER
-
-#[1 KISALTMALAR 5](#1-KISALTMALAR 5) 
-# [1 TANIMLAR 7](#1-TANIMLAR 7) 
+  
+* [ İÇİNDEKİLER](#1 KISALTMALAR 5)
 
 
 
+* [KISALTMALAR 5](#1 KISALTMALAR 5)
+* [TANIMLAR 7](#TANIMLAR 7)
+* [1.Giriş](#GİRİŞ 11)
+    * [1.1 Amaç ve Kapsam](#11-format-of-the-audit-log-event)       
+    * [1.2 Rehberin İçeriği ve Güncelleme Süreci](#12-references)
+    * [1.3 Rehber Uyum Planı](#12-references)
+* [2 BİLGİ VE İLETİŞİM GÜVENLİĞİ REHBERİ UYGULAMA SÜRECİ](#2-audit-log-events)
+    * [2.1 Planlama](#21-central-server)
+        * [2.1.1 Varlık Gruplarının Belirlenmesi](#211-common-events)
+        * [2.1.2 Varlık Grubu Kritiklik Derecesinin Belirlenmesi](#212-initialization-event)
+        * [2.1.3 Mevcut Durum ve Boşluk Analizi](#213-members-events)
+        * [2.1.4 Rehber Uygulama Yol Haritasının Hazırlanması](#214-security-servers-events)
+       
+    * [2.2 Uygulama](#22-security-server)
+        * [2.2.1 Bilgi ve İletişim Güvenliği Temel Prensipleri](#221-common-events)
+    * [2.3 Kontrol Etme ve Önlem Alma](#22-security-server)
+        * [2.3.1 Rehber Uygulama Yol Haritasının İzlenmesi ve Kontrol Edilmesi](#222-initialization-events)
+        * [2.3.2 Bilgi ve İletişim Güvenliği Denetimi](#223-security-server-clients-events)
+        
+    * [2.4 Değişiklik Yönetimi](#23-utility-signer-console)
+        * [2.4.1. Rehber Değişikliklerinin Yönetilmesi](#224-system-parameters-events)
+        * [2.4.2. Varlık Gruplarının Değişikliklerinin Yönetilmesi](#225-keys-and-certificates-events)
+        * [2.2.6 Backup and Restore Events](#226-backup-and-restore-events)
+        * [2.2.7 API Key Management Events](#227-api-key-management-events)
+        * [2.2.8 Technical Events](#228-technical-events)
+         
+* [3.VARLIK GRUPLARINA YÖNELİK GÜVENLİK TEDBİRLERİ](#GİRİŞ 11)
+   * [3.1  Ağ ve Sistem Güvenliği](#21-central-server)
+
+       * [3.1.1. Donanım Varlıklarının Envanter Yönetimi](#224-system-parameters-events)
+       * [3.1.2. Yazılım Varlıklarının Envanter Yönetimi](#225-keys-and-certificates-events)
+       * [3.1.3. Tehdit ve Zafiyet Yönetimi](#226-backup-and-restore-events)
+       * [3.1.4. E-Posta Sunucusu ve İstemcisi Güvenliği](#227-api-key-management-events)
+       * [3.1.5. Zararlı Yazılımlardan Korunma](#228-technical-events)
+       * [3.1.6. Ağ Güvenliği](#228-technical-events)
+       * [3.1.7. Veri Sızıntısı Önleme](#228-technical-events)
+       * [3.1.8. İz ve Denetim Kayıtlarının Tutulması ve İzlenmesi](#228-technical-events)
+       * [3.1.9. Sanallaştırma Güvenliği](#228-technical-events)
+       * [3.1.10. Siber Güvenlik Olay Yönetimi ](#228-technical-events)
+       * [3.1.11. Sızma Testleri ve Güvenlik Denetimleri](#228-technical-events)
+       * [3.1.12. Kimlik Doğrulama ve Erişim Yönetimi ](#228-technical-events)
+       * [3.1.13. Felaket Kurtarma ve İş Sürekliliği Yönetimi](#228-technical-events)
+       * [3.1.14. Uzaktan Çalışma](#228-technical-events)
+  
+  * [3.2  Uygulama ve Veri Güvenliği](#21-central-server)  
+      * [3.2.1. Kimlik Doğrulama](#224-system-parameters-events)
+      * [3.2.2. Oturum Yönetimi](#225-keys-and-certificates-events)
+      * [3.2.3. Yetkilendirme](#226-backup-and-restore-events)
+      * [3.2.4. Dosyaların ve Kaynakların Güvenliği](#227-api-key-management-events)
+      * [3.2.5. Güvenli Kurulum ve Yapılandırma](#228-technical-events)
+      * [3.2.6. Güvenli Yazılım Geliştirme](#228-technical-events)
+      * [3.2.7. Veri Tabanı ve Kayıt Yönetimi](#228-technical-events)
+      * [3.2.8. Hata Ele Alma ve Kayıt Yönetimi](#228-technical-events)
+      * [3.2.9. İletişim Güvenliği](#228-technical-events)
+      * [3.2.10. Kötücül İşlemleri Engelleme](#228-technical-events)
+      * [3.2.11. Dış Sistem Entegrasyonlarının Güvenliği ](#228-technical-events)
+  * [3.3  Taşınabilir Cihaz ve Ortam Güvenliği](#21-central-server)
+      * [3.3.1. Akıllı Telefon ve Tablet Güvenliği](#228-technical-events)
+      * [3.3.2. Taşınabilir Bilgisayar Güvenliği](#228-technical-events)
+      * [3.3.3. Taşınabilir Ortam Güvenliği (CD/DVD, Taşınabilir Bellek Ortamları) ](#228-technical-events)
+  
+  * [3.4  Nesnelerin İnterneti (IoT) Cihazlarının Güvenliği](#21-central-server)
+      * [3.4.1. Ağ Servisleri ve İletişimi](#224-system-parameters-events)
+      * [3.4.2. Dâhili Veri Depolama](#225-keys-and-certificates-events)
+      * [3.4.3. Kimlik Doğrulama ve Yetkilendirme](#226-backup-and-restore-events)
+      * [3.4.4. API ve Bağlantı Güvenliği](#227-api-key-management-events)
+      * [3.4.5. Diğer Güvenlik Tedbirleri ](#228-technical-events)
+
+  * [3.5  Personel Güvenliği](#21-central-server)
+      * [3.5.1. Genel Güvenlik Tedbirleri](#224-system-parameters-events)
+      * [3.5.2. Eğitim ve Farkındalık Faaliyetleri](#225-keys-and-certificates-events)
+      * [3.5.3. Tedarikçi İlişkileri Güvenliği](#226-backup-and-restore-events)
+
+  * [3.6  Fiziksel Mekânların Güvenliği](#21-central-server)
+      * [3.6.1. Genel Güvenlik Tedbirleri](#224-system-parameters-events)
+      * [3.6.2. Sistem Odası/Veri Merkezine Yönelik Güvenlik Tedbirleri](#225-keys-and-certificates-events)
+      * [3.6.3. Elektromanyetik Bilgi Kaçaklarından Korunma Yöntemleri (TEMPEST)](#226-backup-and-restore-events)
+
+* [4.UYGULAMA VE TEKNOLOJİ ALANLARINA YÖNELİK GÜVENLİK TEDBİRLERİ](#GİRİŞ 11)
+
+   * [4.1  Kişisel Verilerin Güvenliği](#21-central-server)
+     * [4.1.1. Kayıt Yönetimi](#224-system-parameters-events)
+     * [4.1.2. Erişim Kayıtları Yönetimi](#225-keys-and-certificates-events)
+     * [4.1.3. Yetkilendirme ](#226-backup-and-restore-events)
+     * [4.1.4. Şifreleme](#224-system-parameters-events)
+     * [4.1.5. Yedekleme, Silme, Yok Etme ve Anonim Hale Getirme](#225-keys-and-certificates-events)
+     * [4.1.6. Aydınlatma Yönetimi](#226-backup-and-restore-events)
+     * [4.1.7. Açık Rıza Yönetimi](#224-system-parameters-events)
+     * [4.1.8. Kişisel Veri Yönetim Sürecinin İşletilmesi](#225-keys-and-certificates-events)
+   * [4.2  Anlık Mesajlaşma Güvenliği](#21-central-server)
+     * [4.2.1. Genel Güvenlik Tedbirleri](#226-backup-and-restore-events)
+   * [4.3 Bulut Bilişim Güvenliği](#21-central-server)  
+     * [4.3.1. Genel Güvenlik Tedbirleri](#224-system-parameters-events)
+  * [4.4 Kripto Uygulamaları Güvenliği](#21-central-server)  
+      * [4.4.1. Kriptografik Algoritmalar ve Kullanımı](#224-system-parameters-events)
+      * [4.4.2. Şifreleme ve Anahtar Yönetimi](#225-keys-and-certificates-events)
+      * [4.4.3. Kriptografik Uygulamalar](#226-backup-and-restore-events)
+
+  * [4.5 Kritik Altyapılar Güvenliği](#21-central-server)
+      * [4.5.1. Genel Güvenlik Tedbirleri](#224-system-parameters-events)
+      * [4.5.2. Enerji Sektörü Özelinde Güvenlik Tedbirleri](#225-keys-and-certificates-events)
+      * [4.5.3. Elektronik Haberleşme Sektörü Özelinde Güvenlik Tedbirleri](#226-backup-and-restore-events)
+  * [4.6 Yeni Geliştirmeler ve Tedarik](#21-central-server)
+      * [4.6.1. Genel Güvenlik Tedbirleri](#224-system-parameters-events)
+
+* [5.SIKILAŞTIRMA TEDBİRLERİ](#GİRİŞ 11)
+  * [5.1  İşletim Sistemi Sıkılaştırma Tedbirleri](#21-central-server)
+    * [5.1.1. Genel Sıkılaştırma Tedbirleri](#224-system-parameters-events)
+    * [5.1.2. Linux İşletim Sistemi Sıkılaştırma Tedbirleri](#225-keys-and-certificates-events)
+    * [5.1.3. Windows İşletim Sistemi Sıkılaştırma Tedbirleri](#226-backup-and-restore-events)
+  * [5.2  Veri Tabanı Sıkılaştırma Tedbirleri](#21-central-server)
+    * [5.2.1. Genel Sıkılaştırma Tedbirleri](#224-system-parameters-events)
+  * [5.3  Sunucu Sıkılaştırma Tedbirleri ](#21-central-server)  
+    * [5.3.1. Web Sunucusu Sıkılaştırma Tedbirleri](#225-keys-and-certificates-events)
+    * [5.3.2. Sanallaştırma Sunucusu Sıkılaştırma Tedbirleri](#226-backup-and-restore-events)
+ 
 * [1KISALTMALAR 5](#1 KISALTMALAR 5)
 * [TANIMLAR 7](#TANIMLAR 7)
-  * [1.1 Format of the Audit Log Event](#11-format-of-the-audit-log-event)
-    * [1.1.1 Extended Audit Log Format](#111-extended-audit-log-format)
-    * [1.1.2 Common Value Structures of the Data Fields](#112-common-value-structures-of-the-data-fields)
-  * [1.2 References](#12-references)
+    * [1.1 Format of the Audit Log Event](#11-format-of-the-audit-log-event)
+        * [1.1.1 Extended Audit Log Format](#111-extended-audit-log-format)
+        * [1.1.2 Common Value Structures of the Data Fields](#112-common-value-structures-of-the-data-fields)
+    * [1.2 References](#12-references)
 * [2 Audit Log Events](#2-audit-log-events)
-  * [2.1 Central Server](#21-central-server)
-    * [2.1.1 Common Events](#211-common-events)
-    * [2.1.2 Initialization Event](#212-initialization-event)
-    * [2.1.3 Members Events](#213-members-events)
-    * [2.1.4 Security Servers Events](#214-security-servers-events)
-    * [2.1.5 Global Groups Events](#215-global-groups-events)
-    * [2.1.6 Certification Services Events](#216-certification-services-events)
-    * [2.1.7 Timestamping Services Events](#217-timestamping-services-events)
-    * [2.1.8 Management Requests Events](#218-management-requests-events)
-    * [2.1.9 Configuration Management Events](#219-configuration-management-events)
-    * [2.1.10 System Settings Events](#2110-system-settings-events)
-    * [2.1.11 Backup and Restore Events](#2111-backup-and-restore-events)
-  * [2.2 Security Server](#22-security-server)
-    * [2.2.1 Common Events](#221-common-events)
-    * [2.2.2 Initialization Events](#222-initialization-events)
-    * [2.2.3 Security Server Clients Events](#223-security-server-clients-events)
-    * [2.2.4 System Parameters Events](#224-system-parameters-events)
-    * [2.2.5 Keys and Certificates Events](#225-keys-and-certificates-events)
-    * [2.2.6 Backup and Restore Events](#226-backup-and-restore-events)
-    * [2.2.7 API Key Management Events](#227-api-key-management-events)
-    * [2.2.8 Technical Events](#228-technical-events)
-  * [2.3 Utility signer-console](#23-utility-signer-console)
+    * [2.1 Central Server](#21-central-server)
+        * [2.1.1 Common Events](#211-common-events)
+        * [2.1.2 Initialization Event](#212-initialization-event)
+        * [2.1.3 Members Events](#213-members-events)
+        * [2.1.4 Security Servers Events](#214-security-servers-events)
+        * [2.1.5 Global Groups Events](#215-global-groups-events)
+        * [2.1.6 Certification Services Events](#216-certification-services-events)
+        * [2.1.7 Timestamping Services Events](#217-timestamping-services-events)
+        * [2.1.8 Management Requests Events](#218-management-requests-events)
+        * [2.1.9 Configuration Management Events](#219-configuration-management-events)
+        * [2.1.10 System Settings Events](#2110-system-settings-events)
+        * [2.1.11 Backup and Restore Events](#2111-backup-and-restore-events)
+    * [2.2 Security Server](#22-security-server)
+        * [2.2.1 Common Events](#221-common-events)
+        * [2.2.2 Initialization Events](#222-initialization-events)
+        * [2.2.3 Security Server Clients Events](#223-security-server-clients-events)
+        * [2.2.4 System Parameters Events](#224-system-parameters-events)
+        * [2.2.5 Keys and Certificates Events](#225-keys-and-certificates-events)
+        * [2.2.6 Backup and Restore Events](#226-backup-and-restore-events)
+        * [2.2.7 API Key Management Events](#227-api-key-management-events)
+        * [2.2.8 Technical Events](#228-technical-events)
+    * [2.3 Utility signer-console](#23-utility-signer-console)
+
+
+* [ KAYNAKÇA](#1 KISALTMALAR 5)
+* [ EKLER](#1 KISALTMALAR 5)
+
+    * [EK-A: GENELGE MADDELERİ EŞLEŞTİRME TABLOSU](#22-security-server)
+    * [EK-B: ULUSLARARASI STANDARTLAR VE YAYIMLI KILAVUZLAR EŞLEŞTİRME TABLOSU ](#22-security-server)
+    * [EK-C: BİLGİ VE İLETİŞİM GÜVENLİĞİ REHBERİ UYGULAMA SÜRECİ KAPSAMINDA](#22-security-server)
+* [ KULLANILACAK FORMLAR, ŞABLONLAR VE ÖRNEK DOKÜMANLAR](#1 KISALTMALAR 5)
+  
+  * [EK-C.1: VARLIK GRUBU KRİTİKLİK DERECELENDİRME ANKETİ](#22-security-server)
+  * [K-C.2: VARLIK GRUBU VE KRİTİKLİK DERECESİ TANIMLAMA FORMU](#22-security-server)
+  * [EK-C.3: MEVCUT DURUM VE BOŞLUK ANALİZ FORMU](#22-security-server)
+  * [EK-C.4: REHBER UYGULAMA YOL HARİTASI BELİRLEME FORMU](#22-security-server)
+  * [EK-C.5: TELAFİ EDİCİ KONTROL KAYIT FORMU ](#22-security-server)
+  * [EK-C.6: TAAHHÜTNAME ÖRNEĞİ](#22-security-server)
+
+* [ ŞEKİLLER](#1 KISALTMALAR 5)
+  * [Şekil 1. Bilgi ve İletişim Güvenliği Rehberinin Hedefleri](#22-security-server)
+  * [Şekil 2. Rehber Güncelleme Süreci](#22-security-server)
+  * [Şekil 3. Rehber Uyum Planı](#22-security-server)
+  * [Şekil 4. Rehber ve Bilgi Güvenliği Yönetim Sistemi İlişkisi](#22-security-server)
+  * [Şekil 6. Varlıklar, Varlık Grupları ve Varlık Ana Başlıkları](#22-security-server)
+  * [Şekil 7. Kritiklik Derecesi Belirlemek için Kullanılan Boyutlar](#22-security-server) 
+  * [Şekil 8. Temel Prensipler ](#22-security-server)
+
+* [ TABLOLAR](#1 KISALTMALAR 5)
+  * [Tablo 1. SAM Rolleri Açıklamaları ](#22-security-server)
+  * [Tablo 2. Bilgi ve İletişim Güvenliği Rehberi Uygulama Süreci için Sorumluluk Atama Matrisi](#22-security-server)
+  * [Tablo 3. Anket Puanına Karşılık Gelen Kritiklik Derecesi](#22-security-server)
+  * [Tablo 4. Varlık Grubu Kritiklik Derecesinin Belirlenmesi](#22-security-server)
+  * [Tablo 5. Alt Varlık Gruplarının Kritiklik Derecesinin Belirlenmesi](#22-security-server)
+  * [Tablo 6. Varlık Gruplarına Yönelik Tedbir Uygulanabilirlik Örnek Çalışması](#22-security-server)
 
 
 
 
 
 
- 
- [KISALTMALAR	5](#KISALTMALAR	5)
-TANIMLAR	7
-GİRİŞ	11
-Amaç ve Kapsam	11
-Rehberin İçeriği ve Güncelleme Süreci	12
-Rehber Uyum Planı	13
-BİLGİ VE İLETİŞİM GÜVENLİĞİ REHBERİ UYGULAMA SÜRECİ	19
-Planlama	21
-2.1.1.	Varlık Gruplarının Belirlenmesi	21
-2.1.2.	Varlık Grubu Kritiklik Derecesinin Belirlenmesi	24
-2.1.3.	Mevcut Durum ve Boşluk Analizi	27
-2.1.4.	Rehber Uygulama Yol Haritasının Hazırlanması	29
-Uygulama	30
-2.2.1. Bilgi ve İletişim Güvenliği Temel Prensipleri	30
-Kontrol Etme ve Önlem Alma	31
-2.3.1.	Rehber Uygulama Yol Haritasının İzlenmesi ve Kontrol Edilmesi	31
-2.3.2.	Bilgi ve İletişim Güvenliği Denetimi	31
-Değişiklik Yönetimi	32
-2.4.1.	Rehber Değişikliklerinin Yönetilmesi	32
-2.4.2.	Varlık Gruplarının Değişikliklerinin Yönetilmesi	32
-VARLIK GRUPLARINA YÖNELİK GÜVENLİK TEDBİRLERİ	35
-Ağ ve Sistem Güvenliği	35
-3.1.1.	Donanım Varlıklarının Envanter Yönetimi	36
-3.1.2.	Yazılım Varlıklarının Envanter Yönetimi	38
-3.1.3.	Tehdit ve Zafiyet Yönetimi	40
-3.1.4.	E-Posta Sunucusu ve İstemcisi Güvenliği	44
-3.1.5.	Zararlı Yazılımlardan Korunma	47
-3.1.6.	Ağ Güvenliği	49
-3.1.7.	Veri Sızıntısı Önleme	57
-3.1.8.	İz ve Denetim Kayıtlarının Tutulması ve İzlenmesi	59
-3.1.9.	Sanallaştırma Güvenliği	61
-3.1.10.	Siber Güvenlik Olay Yönetimi	64
-3.1.11.	Sızma Testleri ve Güvenlik Denetimleri	66
-3.1.12.	Kimlik Doğrulama ve Erişim Yönetimi	68
-3.1.13.	Felaket Kurtarma ve İş Sürekliliği Yönetimi	74
-3.1.14.	Uzaktan Çalışma	79
-Uygulama ve Veri Güvenliği	84
-3.2.1.	Kimlik Doğrulama	84
-1
- 
-3.2.2.	Oturum Yönetimi	89
-3.2.3.	Yetkilendirme	91
-3.2.4.	Dosyaların ve Kaynakların Güvenliği	92
-3.2.5.	Güvenli Kurulum ve Yapılandırma	95
-3.2.6.	Güvenli Yazılım Geliştirme	98
-3.2.7.	Veri Tabanı ve Kayıt Yönetimi	100
-3.2.8.	Hata Ele Alma ve Kayıt Yönetimi	104
-3.2.9.	İletişim Güvenliği	106
-3.2.10.	Kötücül İşlemleri Engelleme	107
-3.2.11.	Dış Sistem Entegrasyonlarının Güvenliği	111
-Taşınabilir Cihaz ve Ortam Güvenliği	114
-3.3.1.	Akıllı Telefon ve Tablet Güvenliği	114
-3.3.2.	Taşınabilir Bilgisayar Güvenliği	118
-3.3.3.	Taşınabilir Ortam Güvenliği (CD/DVD, Taşınabilir Bellek Ortamları)	120
-Nesnelerin İnterneti (IoT) Cihazlarının Güvenliği	121
-3.4.1.	Ağ Servisleri ve İletişimi	121
-3.4.2.	Dâhili Veri Depolama	123
-3.4.3.	Kimlik Doğrulama ve Yetkilendirme	124
-3.4.4.	API ve Bağlantı Güvenliği	125
-3.4.5.	Diğer Güvenlik Tedbirleri	126
-Personel Güvenliği	128
-3.5.1.	Genel Güvenlik Tedbirleri	128
-3.5.2.	Eğitim ve Farkındalık Faaliyetleri	131
-3.5.3.	Tedarikçi İlişkileri Güvenliği	132
-Fiziksel Mekânların Güvenliği	134
-3.6.1.	Genel Güvenlik Tedbirleri	135
-3.6.2.	Sistem Odası/Veri Merkezine Yönelik Güvenlik Tedbirleri	141
-3.6.3.	Elektromanyetik Bilgi Kaçaklarından Korunma Yöntemleri (TEMPEST)	146
-UYGULAMA VE TEKNOLOJİ ALANLARINA YÖNELİK GÜVENLİK TEDBİRLERİ	149
-Kişisel Verilerin Güvenliği	149
-4.1.1.	Kayıt Yönetimi	149
-4.1.2.	Erişim Kayıtları Yönetimi	152
-4.1.3.	Yetkilendirme	153
-4.1.4.	Şifreleme	155
-4.1.5.	Yedekleme, Silme, Yok Etme ve Anonim Hale Getirme	156
-4.1.6.	Aydınlatma Yönetimi	157
-4.1.7.	Açık Rıza Yönetimi	158
-4.1.8.	Kişisel Veri Yönetim Sürecinin İşletilmesi	160
-Anlık Mesajlaşma Güvenliği	161
-4.2.1. Genel Güvenlik Tedbirleri	161
-Bulut Bilişim Güvenliği	163
-4.3.1. Genel Güvenlik Tedbirleri	164
-Kripto Uygulamaları Güvenliği	168
-4.4.1.	Kriptografik Algoritmalar ve Kullanımı	168
-4.4.2.	Şifreleme ve Anahtar Yönetimi	170
-4.4.3.	Kriptografik Uygulamalar	176
-Kritik Altyapılar Güvenliği	178
-4.5.1.	Genel Güvenlik Tedbirleri	178
-4.5.2.	Enerji Sektörü Özelinde Güvenlik Tedbirleri	179
-4.5.3.	Elektronik Haberleşme Sektörü Özelinde Güvenlik Tedbirleri	182
-Yeni Geliştirmeler ve Tedarik	185
-4.6.1. Genel Güvenlik Tedbirleri	185
-SIKILAŞTIRMA TEDBİRLERİ	189
-İşletim Sistemi Sıkılaştırma Tedbirleri	189
-5.1.1.	Genel Sıkılaştırma Tedbirleri	189
-5.1.2.	Linux İşletim Sistemi Sıkılaştırma Tedbirleri	193
-5.1.3.	Windows İşletim Sistemi Sıkılaştırma Tedbirleri	196
-Veri Tabanı Sıkılaştırma Tedbirleri	198
-5.2.1. Genel Sıkılaştırma Tedbirleri	198
-Sunucu Sıkılaştırma Tedbirleri	202
-5.3.1.	Web Sunucusu Sıkılaştırma Tedbirleri	203
-5.3.2.	Sanallaştırma Sunucusu Sıkılaştırma Tedbirleri	207
-KAYNAKÇA	210
-EKLER	211
-EK-A: GENELGE MADDELERİ EŞLEŞTİRME TABLOSU	211
-EK-B: ULUSLARARASI STANDARTLAR VE YAYIMLI KILAVUZLAR EŞLEŞTİRME TABLOSU	215
-EK-C: BİLGİ VE İLETİŞİM GÜVENLİĞİ REHBERİ UYGULAMA SÜRECİ KAPSAMINDA
-KULLANILACAK FORMLAR, ŞABLONLAR VE ÖRNEK DOKÜMANLAR	217
-EK-C.1: VARLIK GRUBU KRİTİKLİK DERECELENDİRME ANKETİ	217
-EK-C.2: VARLIK GRUBU VE KRİTİKLİK DERECESİ TANIMLAMA FORMU	223
-EK-C.3: MEVCUT DURUM VE BOŞLUK ANALİZ FORMU	224
-EK-C.4: REHBER UYGULAMA YOL HARİTASI BELİRLEME FORMU	226
-EK-C.5: TELAFİ EDİCİ KONTROL KAYIT FORMU	227
-EK-C.6: TAAHHÜTNAME ÖRNEĞİ	228
- 
 
-ŞEKİLLER
-Şekil 1. Bilgi ve İletişim Güvenliği Rehberinin Hedefleri	12
-Şekil 2. Rehber Güncelleme Süreci	13
-Şekil 3. Rehber Uyum Planı	13
-Şekil 4. Rehber ve Bilgi Güvenliği Yönetim Sistemi İlişkisi	14
-Şekil 5. Bilgi ve İletişim Güvenliği Rehberi Uygulama Süreci	19
-Şekil 6. Varlıklar, Varlık Grupları ve Varlık Ana Başlıkları	22
-Şekil 7. Kritiklik Derecesi Belirlemek için Kullanılan Boyutlar	24
-Şekil 8. Temel Prensipler	30
-
-
-TABLOLAR
-Tablo 1. SAM Rolleri Açıklamaları	20
-Tablo 2. Bilgi ve İletişim Güvenliği Rehberi Uygulama Süreci için Sorumluluk Atama Matrisi	20
-Tablo 3. Anket Puanına Karşılık Gelen Kritiklik Derecesi	25
-Tablo 4. Varlık Grubu Kritiklik Derecesinin Belirlenmesi	26
-Tablo 5. Alt Varlık Gruplarının Kritiklik Derecesinin Belirlenmesi	26
-Tablo 6. Varlık Gruplarına Yönelik Tedbir Uygulanabilirlik Örnek Çalışması	27
 
 
 

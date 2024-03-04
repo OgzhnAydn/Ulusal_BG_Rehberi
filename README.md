@@ -1,4 +1,11 @@
-  
+
+https://requests.readthedocs.io/en/latest/dev/contributing/#documentation-contributions
+
+https://github.com/OWASP/secure-coding-practices-quick-reference-guide/blob/main/materials/Flyer_Secure_Coding_Practices_Quick_Reference_Guide_V2.pdf
+
+https://github.com/alex-xu-system/bytebytego/blob/main/system_design_links.md
+
+https://gitter.im/  
 * [ İÇİNDEKİLER](#1 KISALTMALAR 5)
 
 

@@ -3,7 +3,8 @@
  
 
 
-* [1 KISALTMALAR](#1-KISALTMALAR)
+* [KISALTMALAR 5](#KISALTMALAR 5)
+* [TANIMLAR 7](#TANIMLAR 7)
   * [1.1 Format of the Audit Log Event](#11-format-of-the-audit-log-event)
     * [1.1.1 Extended Audit Log Format](#111-extended-audit-log-format)
     * [1.1.2 Common Value Structures of the Data Fields](#112-common-value-structures-of-the-data-fields)

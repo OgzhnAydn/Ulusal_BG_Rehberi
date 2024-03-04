@@ -1,3 +1,267 @@
+
+
+X-Road Documentation
+Terms and abbreviations
+[TA-TERMS] Terms of X-Road
+Architecture
+[ARC-G] X-Road Architecture
+[ARC-SEC] X-Road Security Architecture
+[ARC-SS] Security Server Architecture
+[ARC-CP] Configuration Proxy Architecture
+[ARC-CS] Central Server Architecture
+[SPEC-AL] Audit Log Events
+[ARC-TEC] Technologies used in X-Road
+[ARC-OPMOND] Operational Monitoring Daemon Architecture
+[ARC-ENVMON] Environmental Monitoring Architecture
+Protocols
+[PR-REST] Message Protocol for REST
+[PR-MESS] Message Protocol
+[PR-TARGETSS] Security Server Targeting Extension for the X-Road Message Protocol
+[PR-SECTOKEN] Security Token Extension for the X-Road Message Protocol
+[PR-THIRDPARTY] Third Party Representation Extension for the X-Road Message Protocol
+[PR-MESSTRANSP] Message Transport Protocol
+[PR-MSERV] Protocol for Management Services
+[PR-META] Service Metadata Protocol
+[PR-MREST] Service Metadata Protocol for REST
+[PR-GCONF] Protocol for Downloading Configuration
+[PR-OPMON] Operational Monitoring Protocol
+[PR-OPMONJMX] Operational Monitoring JMX Protocol
+[PR-ENVMONMES] Environmental Monitoring Messages
+Manuals
+[IG-SS] Security Server Installation Guide
+[IG-SS-RHEL] Security Server Installation Guide for RHEL
+[IG-CS] Central Server Installation Guide
+[IG-CSHA] HA Installation Guide
+[IG-XLB] External Load Balancer Installation Guide
+[UG-SS] Security Server User Guide
+[UG-CS] Central Server User Guide
+[UG-SC] Signer Console Users Guide
+[UG-SIGDOC] Signed Document Download and Verification Manual
+[UG-CP] Configuration Proxy Manual
+[UG-SYSPAR] System Parameters
+[UG-OPMONSYSPAR] Operational Monitoring System Parameters
+[UG-SS-SIDECAR] Security Server Sidecar User Guide
+[UG-SS-SEC-SIDECAR] Security Server Sidecar Security Guide
+[UG-K-SS-SIDECAR] Kubernetes Security Server Sidecar User Guide
+[UG-K-SS-SEC-SIDECAR] Kubernetes Security Server Sidecar Security User Guide
+Use Cases
+[UC-SS] Security Server Management
+[UC-CP] Configuration Proxy
+[UC-CS] Central Server Management
+[UC-FED] Federation
+[UC-MEMBER] Member Management
+[UC-GCONF] Global Configuration Distribution
+[UC-TRUST] Trust Service Management
+[UC-MESS] Member Communication
+[UC-SERVICE] Service Management
+[UC-OPMON] Use Case Model for Operational Monitoring Daemon
+Data Models
+[DM-SS] Security Server Configuration
+[DM-CS] Central Server Configuration
+[DM-ML] Message Log
+Testing
+[TEST-OPMON] Operational Monitoring Testing Plan
+[TEST-OPMONSTRAT] Operational Monitoring Testing Strategy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 name: Change request
 about: Suggest a change for this project

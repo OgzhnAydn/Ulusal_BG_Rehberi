@@ -1,4 +1,47 @@
 
+
+[![Gitter Kominity]([https://img.shields.io/badge/Go%20to%20Community%20Slack-grey.svg)](https://seeklogo.com/images/G/gitter-logo-A41C0DAA6C-seeklogo.com.png)][(https://jointxroad.slack.com](https://app.gitter.im/#/room/!vZPDJIcWzGZwgIiYUF:gitter.im)/)
+[![Get invited](https://img.shields.io/badge/No%20Slack-Get%20invited-green.svg)](https://x-road.global/community)
+
+![X-Road logo](xroad_logo_small.png)
+
+## About the repository 
+
+This repository contains information about the [X-Road](https://x-road.global), its source code, development, installation and documentation.
+
+## X-Road source code
+
+The [source code](https://github.com/nordic-institute/X-Road/tree/develop/src) of X-Road is published under the MIT open source licence. X-Road is free of charge and can be implemented by any organisation.
+
+**What is X-Road?**
+
+X-Road® is open-source software and ecosystem solution that provides unified and secure data exchange between organisations.
+
+![X-Road overview](X-Road_overview.png)
+
+X-Road Data Exchange Layer is a standardised, cohesive, collaborative, interoperable and secure data exchange layer that gives service providers a completely new kind of opportunity of making themselves visible in services directed at citizens, businesses and civil servants. Creating entities that combine many different services and data sources is easy and cost efficient.
+
+* Improves the quality of existing services and products
+* Enables new types of service innovations
+* Savings in infrastructure, archiving and other costs
+* Standardised data security and privacy protection
+* Easy implementation, data access via interfaces – after connecting all included services are available
+
+See [X-Road product website](https://x-road.global) for more information about X-Road.
+
+## Development of X-Road
+
+X-Road development model and all the related documentation is published and
+maintained in the [X-Road Development](https://github.com/nordic-institute/X-Road-development/)
+GitHub repository.
+
+**How to contribute?**
+
+Guidelines for the X-Road contributors are available [here](CONTRIBUTING.md).
+
+
+
+
 https://requests.readthedocs.io/en/latest/dev/contributing/#documentation-contributions
 
 https://github.com/OWASP/secure-coding-practices-quick-reference-guide/blob/main/materials/Flyer_Secure_Coding_Practices_Quick_Reference_Guide_V2.pdf

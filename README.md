@@ -1,5 +1,3 @@
-[Gitter (link_to_your_image)](https://app.gitter.im/#/room/#Bg_Rehberi:gitter.im) [![LinkedIn](link_to_your_image)](https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit) 
-[x](https://twitter.com/0oguzhan8)
 [Proje Sayfası](https://pku-yuangroup.github.io/Open-Sora-Plan/) 
 
 
@@ -115,11 +113,11 @@ Daha fazla ayrıntı için lütfen [Katkı Kurallarına](docs/Contribution_Guide
         - [ ] 5.3.1. Web Sunucusu Sıkılaştırma Tedbirleri
         - [ ] 5.3.2. Sanallaştırma Sunucusu Sıkılaştırma Tedbirleri
 
----
+----
 ### Örnekler
 
      Yakında
----
+---------------
 
 ### Bilgilendirme
 

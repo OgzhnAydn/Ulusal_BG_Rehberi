@@ -1,6 +1,6 @@
 [Proje Sayfası](https://pku-yuangroup.github.io/Open-Sora-Plan/) 
 ## Amaç
-Türkiye Cumhuriyeti Cumhurbaşkanlığı  Dijital Dönüşüm Ofisi Başkanlığı
+* Türkiye Cumhuriyeti Cumhurbaşkanlığı  Dijital Dönüşüm Ofisi Başkanlığı
 koordinasyonunda paydaşların katılımıyla bilgi güvenliği rislerinin azaltılması, ortadan kaldırılması ve özellikle gizliliği,
 bütünlüğü veya erişilebilirliği bozulduğunda milli güvenliği tehdit edebilecek veya kamu düzeninin
 bozulmasına yol açabilecek kritik bilgi/verinin güvenliğinin sağlanması için asgari güvenlik tedbirlerinin
@@ -15,7 +15,7 @@ Dünya ve Ülkemizde Gerçekleşen olaylara göre Ulusal Bilgi Güvenliği Strat
 4. Veri Tabanlarında Depalolanan veririnin Açık(Plain) değil Şifreli(Cipher) Depolanmasını sağlamak için ara katman oluşturmak.
 -----
 ### Nasıl Katkı Sağlarım
-Ulusal Bilgi Güvenliği Stratejilerinin belirlenmesi için oluşturulan  açık kaynak topluluğuna yaptığınız katkılardan ve onu şu ankinden daha iyi hale getirmemize yardımcı olduğunuz için çok teşekkür ederiz!
+* Ulusal Bilgi Güvenliği Stratejilerinin belirlenmesi için oluşturulan  açık kaynak topluluğuna yaptığınız katkılardan ve onu şu ankinden daha iyi hale getirmemize yardımcı olduğunuz için çok teşekkür ederiz!
 Daha fazla ayrıntı için lütfen [Katkı Kurallarına](docs/Contribution_Guidelines.md) bakın.
 --------
 ### Yapılacaklar

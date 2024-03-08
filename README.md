@@ -1,23 +1,27 @@
+[Gitter (link_to_your_image)](https://app.gitter.im/#/room/#Bg_Rehberi:gitter.im) [![LinkedIn](link_to_your_image)](https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit) 
+[x](https://twitter.com/0oguzhan8)
 [Proje Sayfası](https://pku-yuangroup.github.io/Open-Sora-Plan/) 
-## Amaç
-Türkiye Cumhuriyeti Cumhurbaşkanlığı  Dijital Dönüşüm Ofisi Başkanlığı
+
+
+### Amaç
+* Türkiye Cumhuriyeti Cumhurbaşkanlığı  Dijital Dönüşüm Ofisi Başkanlığı
 koordinasyonunda paydaşların katılımıyla bilgi güvenliği rislerinin azaltılması, ortadan kaldırılması ve özellikle gizliliği,
 bütünlüğü veya erişilebilirliği bozulduğunda milli güvenliği tehdit edebilecek veya kamu düzeninin
 bozulmasına yol açabilecek kritik bilgi/verinin güvenliğinin sağlanması için asgari güvenlik tedbirlerinin
-belirlenmesi ve belirlenen tedbirlerin uygulanması için yürütülecek faaliyetlerin tanımlama amacı ile hazırlanan    Bilgi ve İletişim Güvenliği Rehberi(https://cbddo.gov.tr/SharedFolderServer/Genel/File/bg_rehber.pdf)nin
+belirlenmesi ve belirlenen tedbirlerin uygulanması için yürütülecek faaliyetlerin tanımlama amacı ile hazırlanan Bilgi ve İletişim Güvenliği Rehberi nin
 Dünya ve Ülkemizde Gerçekleşen olaylara göre Ulusal Bilgi Güvenliği Stratejilerinin belirlenmesine katkı sağlamaktır .
----------
+---
 ### Proje  Aşamaları:
 - Öncelik
 1. Ulusal Bilgi ve İletişim Güvenliği Stratejilerine katkı sağlayamak amacı ile topluluk Oluşturmak.
 2. Ulusal Bilgi ve İletişim Güvenliği Stratejilerine katkı sağlayamak amacı ile ilgili alanlarda güncelleme ve ekleme yapmak.
 3. Uyuglaması Mümkün olan Stratejiler için  uygulama örnekleri geliştirmek.
 4. Veri Tabanlarında Depalolanan veririnin Açık(Plain) değil Şifreli(Cipher) Depolanmasını sağlamak için ara katman oluşturmak.
------
+---
 ### Nasıl Katkı Sağlarım
-Ulusal Bilgi Güvenliği Stratejilerinin belirlenmesi için oluşturulan  açık kaynak topluluğuna yaptığınız katkılardan ve onu şu ankinden daha iyi hale getirmemize yardımcı olduğunuz için çok teşekkür ederiz!
+* Ulusal Bilgi Güvenliği Stratejilerinin belirlenmesi için oluşturulan  açık kaynak topluluğuna yaptığınız katkılardan ve onu şu ankinden daha iyi hale getirmemize yardımcı olduğunuz için çok teşekkür ederiz!
 Daha fazla ayrıntı için lütfen [Katkı Kurallarına](docs/Contribution_Guidelines.md) bakın.
---------
+---
 ### Yapılacaklar
 
 - [X] 2 BİLGİ VE İLETİŞİM GÜVENLİĞİ REHBERİ UYGULAMA SÜRECİ
@@ -111,15 +115,15 @@ Daha fazla ayrıntı için lütfen [Katkı Kurallarına](docs/Contribution_Guide
         - [ ] 5.3.1. Web Sunucusu Sıkılaştırma Tedbirleri
         - [ ] 5.3.2. Sanallaştırma Sunucusu Sıkılaştırma Tedbirleri
 
-----
+---
 ### Örnekler
 
      Yakında
----------------
+---
 
 ### Bilgilendirme
 
-**[2024.03.05]**  Son yapılan Değişiklikler [todo](https://github.com/PKU-YuanGroup/Open-Sora-Plan?tab=readme-ov-file#todo)
+**[2024.03.05]**  Son yapılan Değişiklikler [Yapılanlar](https://github.com/PKU-YuanGroup/Open-Sora-Plan?tab=readme-ov-file#todo)
 
 ## License
 * Detay için [LICENSE.txt](LICENSE.txt) .

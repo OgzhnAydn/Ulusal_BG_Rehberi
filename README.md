@@ -1,5 +1,29 @@
 [Proje Sayfası](https://pku-yuangroup.github.io/Open-Sora-Plan/) 
 
+.. image:: https://img.shields.io/badge/license-AGPL-blue.svg?style=flat
+    :target: https://opensource.org/licenses/AGPL-3.0
+    :alt: License
+
+.. image:: https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat
+    :target: http://docs.ckan.org
+    :alt: Documentation
+.. image:: https://img.shields.io/badge/support-StackOverflow-yellowgreen.svg?style=flat
+    :target: https://stackoverflow.com/questions/tagged/ckan
+    :alt: Support on StackOverflow
+
+.. image:: https://circleci.com/gh/ckan/ckan.svg?style=shield
+    :target: https://circleci.com/gh/ckan/ckan
+    :alt: Build Status
+
+.. image:: https://coveralls.io/repos/github/ckan/ckan/badge.svg?branch=master
+    :target: https://coveralls.io/github/ckan/ckan?branch=master
+    :alt: Coverage Status
+
+.. image:: https://badges.gitter.im/gitterHQ/gitter.svg
+    :target: https://gitter.im/ckan/chat
+    :alt: Chat on Gitter
+
+
 
 ### Amaç
 * Türkiye Cumhuriyeti Cumhurbaşkanlığı  Dijital Dönüşüm Ofisi Başkanlığı

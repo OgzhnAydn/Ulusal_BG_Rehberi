@@ -1,44 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Page</title>
-</head>
-<body>
-    <h1>Project Page</h1>
-    
-    <!-- License Badge -->
-    <a href="https://opensource.org/licenses/AGPL-3.0">
-        <img src="https://img.shields.io/badge/license-AGPL-blue.svg?style=flat" alt="License">
-    </a>
-    
-    <!-- Documentation Badge -->
-    <a href="http://docs.ckan.org">
-        <img src="https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat" alt="Documentation">
-    </a>
+[![License](https://img.shields.io/badge/license-AGPL-blue.svg?style=flat)](https://opensource.org/licenses/AGPL-3.0)
+[![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat)](http://docs.ckan.org)
+[![Support on StackOverflow](https://img.shields.io/badge/support-StackOverflow-yellowgreen.svg?style=flat)](https://stackoverflow.com/questions/tagged/ckan)
+[![Build Status](https://circleci.com/gh/ckan/ckan.svg?style=shield)](https://circleci.com/gh/ckan/ckan)
+[![Coverage Status](https://coveralls.io/repos/github/ckan/ckan/badge.svg?branch=master)](https://coveralls.io/github/ckan/ckan?branch=master)
+[![Chat on Gitter](https://badges.gitter.im/gitterHQ/gitter.svg)](https://gitter.im/ckan/chat)
 
-    <!-- Support Badge -->
-    <a href="https://stackoverflow.com/questions/tagged/ckan">
-        <img src="https://img.shields.io/badge/support-StackOverflow-yellowgreen.svg?style=flat" alt="Support on StackOverflow">
-    </a>
-
-    <!-- Build Status Badge -->
-    <a href="https://circleci.com/gh/ckan/ckan">
-        <img src="https://circleci.com/gh/ckan/ckan.svg?style=shield" alt="Build Status">
-    </a>
-
-    <!-- Coverage Status Badge -->
-    <a href="https://coveralls.io/github/ckan/ckan?branch=master">
-        <img src="https://coveralls.io/repos/github/ckan/ckan/badge.svg?branch=master" alt="Coverage Status">
-    </a>
-
-    <!-- Chat Badge -->
-    <a href="https://gitter.im/ckan/chat">
-        <img src="https://badges.gitter.im/gitterHQ/gitter.svg" alt="Chat on Gitter">
-    </a>
-</body>
-</html>
 
 
 

@@ -1,27 +1,44 @@
-[Proje Sayfası](https://pku-yuangroup.github.io/Open-Sora-Plan/) 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+</head>
+<body>
+    <h1>Project Page</h1>
+    
+    <!-- License Badge -->
+    <a href="https://opensource.org/licenses/AGPL-3.0">
+        <img src="https://img.shields.io/badge/license-AGPL-blue.svg?style=flat" alt="License">
+    </a>
+    
+    <!-- Documentation Badge -->
+    <a href="http://docs.ckan.org">
+        <img src="https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat" alt="Documentation">
+    </a>
 
-.. image:: https://img.shields.io/badge/license-AGPL-blue.svg?style=flat
-    :target: https://opensource.org/licenses/AGPL-3.0
-    :alt: License
+    <!-- Support Badge -->
+    <a href="https://stackoverflow.com/questions/tagged/ckan">
+        <img src="https://img.shields.io/badge/support-StackOverflow-yellowgreen.svg?style=flat" alt="Support on StackOverflow">
+    </a>
 
-.. image:: https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat
-    :target: http://docs.ckan.org
-    :alt: Documentation
-.. image:: https://img.shields.io/badge/support-StackOverflow-yellowgreen.svg?style=flat
-    :target: https://stackoverflow.com/questions/tagged/ckan
-    :alt: Support on StackOverflow
+    <!-- Build Status Badge -->
+    <a href="https://circleci.com/gh/ckan/ckan">
+        <img src="https://circleci.com/gh/ckan/ckan.svg?style=shield" alt="Build Status">
+    </a>
 
-.. image:: https://circleci.com/gh/ckan/ckan.svg?style=shield
-    :target: https://circleci.com/gh/ckan/ckan
-    :alt: Build Status
+    <!-- Coverage Status Badge -->
+    <a href="https://coveralls.io/github/ckan/ckan?branch=master">
+        <img src="https://coveralls.io/repos/github/ckan/ckan/badge.svg?branch=master" alt="Coverage Status">
+    </a>
 
-.. image:: https://coveralls.io/repos/github/ckan/ckan/badge.svg?branch=master
-    :target: https://coveralls.io/github/ckan/ckan?branch=master
-    :alt: Coverage Status
-
-.. image:: https://badges.gitter.im/gitterHQ/gitter.svg
-    :target: https://gitter.im/ckan/chat
-    :alt: Chat on Gitter
+    <!-- Chat Badge -->
+    <a href="https://gitter.im/ckan/chat">
+        <img src="https://badges.gitter.im/gitterHQ/gitter.svg" alt="Chat on Gitter">
+    </a>
+</body>
+</html>
 
 
 

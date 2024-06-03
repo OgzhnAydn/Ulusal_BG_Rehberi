@@ -30,7 +30,7 @@ Daha fazla ayrıntı için lütfen [Katkı Kurallarına](docs/Contribution_Guide
 ### Yapılacaklar
 
 - [X] [2 BİLGİ VE İLETİŞİM GÜVENLİĞİ REHBERİ UYGULAMA SÜRECİ](#)
-    - [ ] [2.1 Planlama](#)
+    - [ ] [2.1 Planlama](bb1.markdown)
     - [ ] [2.2 Uygulama](#)
         - [ ] [2.2.1 Bilgi ve İletişim Güvenliği Temel Prensipleri](#)
     - [ ] [2.3 Kontrol Etme ve Önlem Alma](#)

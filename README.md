@@ -9,12 +9,10 @@
 
 
 ### Amaç
-* Türkiye Cumhuriyeti Cumhurbaşkanlığı  Dijital Dönüşüm Ofisi Başkanlığı
-koordinasyonunda paydaşların katılımıyla bilgi güvenliği rislerinin azaltılması, ortadan kaldırılması ve özellikle gizliliği,
-bütünlüğü veya erişilebilirliği bozulduğunda milli güvenliği tehdit edebilecek veya kamu düzeninin
+* Türkiye Cumhuriyeti Cumhurbaşkanlığı  Dijital Dönüşüm Ofisi Başkanlığı tarafından  milli güvenliği tehdit edebilecek veya kamu düzeninin
 bozulmasına yol açabilecek kritik bilgi/verinin güvenliğinin sağlanması için asgari güvenlik tedbirlerinin
 belirlenmesi ve belirlenen tedbirlerin uygulanması için yürütülecek faaliyetlerin tanımlama amacı ile hazırlanan Bilgi ve İletişim Güvenliği Rehberi nin
-Dünya ve Ülkemizde Gerçekleşen olaylara göre Ulusal Bilgi Güvenliği Stratejilerinin belirlenmesine katkı sağlamaktır .
+Dünya ve Ülkemizde Gerçekleşen olaylara  Ulusal Bilgi Güvenliği Stratejilerinin belirlenmesine katkı sağlamaktır .
 ---
 ### Proje  Aşamaları:
 - Öncelik
